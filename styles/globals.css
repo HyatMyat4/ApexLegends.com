@@ -1,3 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Roboto:wght@300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .frc {
+    @apply flex flex-row items-center;
+  }
+  .fcc {
+    @apply flex  flex-col items-center;
+  }
+  .Trasition {
+    @apply transition-all duration-75;
+  }
+}
+
+#monospace {
+  font-family: "Share Tech Mono", monospace;
+}
+#RobotoMono {
+  font-family: "Roboto Mono", monospace;
+}
+#Roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#cutomscoll::-webkit-scrollbar {
+  width: 6px; 
+  
+}
+#cutomscoll::-webkit-scrollbar-track {
+  background:  black;
+}
+
+#cutomscoll::-webkit-scrollbar-thumb {
+  background:    white;
+  border-radius: 8px;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
