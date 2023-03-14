@@ -10,7 +10,7 @@ function Session2() {
       <div className="w-full h-auto fcc justify-center">
       <span
             id="monospace"
-            className=" text-[25px] 330:text-[30px] 400:text-[35px] 1400:text-[45px] text-white font-bold tracking-[-.0.99em]"
+            className=" text-[25px] 330:text-[30px] 400:text-[35px] 1400:text-[45px] text-white font-bold "
           >
             DROPIN.BELEGENDARY.
           </span>

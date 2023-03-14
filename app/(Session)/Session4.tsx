@@ -5,7 +5,7 @@ function Session4() {
     <div className='w-full h-[2200px] 745:h-[1500px] 1123:h-[800px] relative overflow-hidden '>
         <div className='w-full h-full fcc  mt-[50px] absolute '>
           <div className=' w-[98%] 1400:w-[1300px] h-full m-auto'>
-            <div id="monospace" className='w-full h-[13%] text-black text-[33px] font-bold  frc justify-center tracking-[-.0.99em]'>
+            <div id="monospace" className='w-full h-[13%] text-black text-[33px] font-bold  frc justify-center '>
                LATEST NEWS
             </div>
             <div  className='w-full h-[81%]    frc items-start justify-center flex-wrap '>

@@ -9,7 +9,7 @@ function Session3() {
         <div className="w-full h-auto fcc justify-center">
           <span
             id="monospace"
-            className=" text-[30px] 400:text-[45px]  760:text-[35px] 1400:text-[45px] text-center text-white font-bold tracking-[-.0.99em]"
+            className=" text-[30px] 400:text-[45px]  760:text-[35px] 1400:text-[45px] text-center text-white font-bold "
           >
             TEAM DEATHMATCH
           </span>
