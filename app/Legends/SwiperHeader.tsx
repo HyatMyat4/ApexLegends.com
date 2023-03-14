@@ -3,16 +3,21 @@ import React from 'react'
 import { ROLES } from '../../constants'
 import  { useRef, useState } from "react";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
-
+import { useEffect } from 'react';
 function SwiperHeader() {
     const [pathname, setpathname] = useState<string | undefined>("All");
 
-    if (window !== undefined) {
-      window.addEventListener("hashchange", () => {
-        const pathname = window.location.hash;
-        setpathname(pathname);
-      });
-    }
+
+    useEffect(() => {
+    
+      if (window) {
+        window.addEventListener("hashchange", () => {
+          const pathname = window.location.hash;
+          setpathname(pathname);
+        });
+      }
+    }, [])
+  
   
     const isActive = pathname?.split("#").pop();
   return (
