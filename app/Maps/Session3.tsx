@@ -2,18 +2,24 @@
 import React from 'react'
 import { Maps_data } from '../../constants'
 import { useState } from 'react'
+import { useEffect } from 'react'
 function Session3() {
     const [pathname, setpathname] = useState<string | undefined>("BrokenMoon");
 
-    if (window !== undefined) {
-      window.addEventListener("hashchange", () => {
-        const pathname = window.location.hash;
-        setpathname(pathname);
-      });
-    }
+useEffect(() => {
+  if (window) {
+    window.addEventListener("hashchange", () => {
+      const pathname = window.location.hash;
+      setpathname(pathname);
+    });
+  }
+}, [])
+
+
+
   
     const isActive = pathname?.split("#").pop();
-    console.log(isActive,'🥑🥑🥑')
+    
   return (
     <>
      {Maps_data.map(data => (

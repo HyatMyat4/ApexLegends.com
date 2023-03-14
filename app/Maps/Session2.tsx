@@ -8,7 +8,7 @@ function Session2() {
 
 
     useEffect(() => {
-      if (window !== undefined) {
+      if (window) {
         window.addEventListener("hashchange", () => {
           const pathname = window.location.hash;
           setpathname(pathname);
