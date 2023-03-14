@@ -3,15 +3,21 @@ import React from 'react'
 import { LEGENDS } from '../../constants'
 import { useState } from 'react'
 import Link from 'next/link'
+import { useEffect } from 'react'
 function Legends3() {
     const [pathname, setpathname] = useState<string | undefined>("All");
 
-    if (window !== undefined) {
-      window.addEventListener("hashchange", () => {
-        const pathname = window.location.hash;
-        setpathname(pathname);
-      });
-    }
+useEffect(() => {
+  if (window) {
+    window.addEventListener("hashchange", () => {
+      const pathname = window.location.hash;
+      setpathname(pathname);
+    });
+  }
+}, [])
+
+
+
   
     const isActive = pathname?.split("#").pop();
   return (

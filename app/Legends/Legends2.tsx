@@ -3,15 +3,19 @@ import React from 'react'
 import { ROLES } from '../../constants'
 import  { useRef, useState } from "react";
 import SwiperHeader from './SwiperHeader';
+import { useEffect } from 'react';
 function Legends2() {
   const [pathname, setpathname] = useState<string | undefined>("All");
 
-  if (window !== undefined) {
-    window.addEventListener("hashchange", () => {
-      const pathname = window.location.hash;
-      setpathname(pathname);
-    });
-  }
+  useEffect(() => {
+    if (window) {
+      window.addEventListener("hashchange", () => {
+        const pathname = window.location.hash;
+        setpathname(pathname);
+      });
+    }
+  }, [])
+
 
   const isActive = pathname?.split("#").pop();
   return (
