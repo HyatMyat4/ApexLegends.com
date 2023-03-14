@@ -46,8 +46,13 @@ module.exports = {
         slowfade2: 'slowfade2 1.5s ease-in-out',
         slowfade3: 'slowfade2 4s ease-in-out',
         slowfadehidden: 'slowfadehidden 2s ease-in-out',
+        Fastspin : 'slowspin 2.5s linear infinite',
       },
       keyframes: {
+        slowspin :{
+          from :{ transform: 'rotate(0deg)' },          
+          to : { transform: 'rotate(360deg)'}
+        },
         dropdownHight: {
           from: {    height: '0%' },
           to: {  height: '95%' },

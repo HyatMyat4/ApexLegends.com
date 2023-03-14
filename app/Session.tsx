@@ -16,15 +16,17 @@ function Session() {
     console.log(Hidden)
   return (
     <div className={`${Hidden ? " hidden" : ""}`}>
-        <Session1/>
-        <Session2/>
-        <Session3/>
-        <Session4/>
-        <Session5/>
-        <Session6/>
-        <Session7/>
-        <Session8/>
-        <Session9/>
+        <div>
+          <Session1/>
+          <Session2/>
+          <Session3/>
+          <Session4/>
+          <Session5/>
+          <Session6/>
+          <Session7/>
+          <Session8/>
+          <Session9/>
+        </div>
     </div>
   )
 }

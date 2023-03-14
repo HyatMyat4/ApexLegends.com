@@ -1,9 +1,15 @@
+"use client"
 import React from "react";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
+import { HiOutlineXMark } from "react-icons/hi2";
 import { ABOUT, SOCAL, FREEDOWLOAD } from "../../constants";
+import { SideBarEngin , SideBarC } from '../../Redux/ActionSlice'
+import { useDispatch , useSelector } from "react-redux";
 import Link from "next/link";
 function SecondHeader() {
+  const dispatch = useDispatch()
+  const openclose = useSelector(SideBarC)
   return (
     <div
       id="monospace"
@@ -11,8 +17,11 @@ function SecondHeader() {
     >
       <div className="w-auto 1090:w-[750px] 1400:w-[900px]   h-full  frc  justify-between ">
         <div className="mx-0  1090:mx-[25px] 1400:mx-[43px] frc select-none">
-          <div className="mr-[15px] ml-[20px] flex 1090:hidden">
+          <div onClick={() => dispatch(SideBarEngin(true))} className={`mr-[15px] ml-[20px]  animate-slowfade flex ${openclose ? " hidden" : ""} 1090:hidden `}>
             <HiOutlineBars3 className="text-white text-[40px] cursor-pointer"/>
+          </div>
+          <div onClick={() => dispatch(SideBarEngin(false))} className={`mr-[15px] ml-[20px]  animate-slowfade flex ${openclose ? "" : " hidden"} 1090:hidden `}>
+            <HiOutlineXMark className="text-white text-[40px] cursor-pointer"/>
           </div>
           <Link href={"/"}>
           <img src="/ApexTextlogo.svg" className="min-w-[55px]" />

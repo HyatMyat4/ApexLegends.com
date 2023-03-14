@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { FiPlay } from "react-icons/Fi";
+import { FiPlay } from "react-icons/fi";
 import { WatchGameplayEngin  } from '../../Redux/ActionSlice'
 import { useDispatch  } from "react-redux";
 function Session1() {
