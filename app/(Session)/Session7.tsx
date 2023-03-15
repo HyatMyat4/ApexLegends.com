@@ -2,7 +2,7 @@ import React from 'react'
 
 function Session7() {
   return (
-    <div className='w-full h-[600px] relative overflow-hidden bg-black'>
+    <div className='w-full h-[600px] relative overflow-hidden bg-[#FFF7EC]'>
         <div className='w-full h-full fcc  absolute  z-50  m-auto'>
           <div className='w-[98%] 1400:w-[1300px] h-full m-auto '>
            <div className='w-full mt-[40px] h-[20%]   frc justify-center'>
