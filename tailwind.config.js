@@ -34,7 +34,7 @@ module.exports = {
         slideleft: 'slideleft 0.7s ease-in-out',
         slideleft3: 'slideleft3 2s ease-in-out',
         slideleft4: 'slideleft3 2.3s ease-in-out',
-        slideleft2: 'slideleft2 1.5s ease-in-out',
+        slideleft2: 'slideleft2 1.2s ease-in-out',
         slideright: 'slideright 1s ease-in-out',
         slideright2: 'slideright2 1.1s ease-in-out',
         slideright3: 'slideright2 1.9s ease-in-out',
@@ -46,7 +46,7 @@ module.exports = {
         slowfade2: 'slowfade2 1.5s ease-in-out',
         slowfade3: 'slowfade2 4s ease-in-out',
         slowfadehidden: 'slowfadehidden 2s ease-in-out',
-        Fastspin : 'slowspin 2.5s linear infinite',
+        Fastspin : 'slowspin 1s linear infinite',
       },
       keyframes: {
         slowspin :{
@@ -98,8 +98,8 @@ module.exports = {
           to: { opacity: 1, transform: 'translateX(0)' },
         },
         slideleft2: {
-          from: { opacity: 0, transform: 'translateX(-160px)' },
-          to: { opacity: 1, transform: 'translateX(0)' },
+          from: {  transform: 'translateX(-350px)' },
+          to: {  transform: 'translateX(0)' },
         },
         slideright: {
           from: { opacity: 0, transform: 'translateX(20px)' },
